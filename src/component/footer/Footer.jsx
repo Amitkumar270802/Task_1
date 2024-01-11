@@ -27,18 +27,20 @@ const Footer = () => {
     <div className="bg-white mt-4">
       <div className="w-9/12 mx-auto relative ">
         <div className="sm:flex-col md:flex-col lg:flex-row lg:items-start sm:items-center md:items-center flex justify-between p-4 ">
-          <div className="flex flex-col  justify-start">
-            <div className="flex">
-              <div className="flex flex-col p-2">
-                <h1 className="text-black text-xl font-bold ">
+          <div className="flex flex-col justify-start sm:mb-10 md:mb-10 lg:mb-0 ">
+            <div className="flex  p-4">
+              <div className="flex flex-col p-2 justify-center ">
+                <h1 className="text-black text-2xl font-bold ">
                   <span className="text-2xl text-pink-600">F</span>ormEase
                 </h1>
-                <h1 className="text-black text-[6px] mt-[-4px] font-semibold">
-                  Apply with Ease
-                </h1>
+                <div className="relative bg-gray-700 h-[2px]  flex justify-center rounded-full">
+                  <h1 className="absolute top-[-7px] text-center p-1 text-black text-[6px] bg-white  font-semibold">
+                    APPLY WITH EASE
+                  </h1>
+                </div>
               </div>
             </div>
-            <div className="flex gap-x-4 text-2xl text-gray-600 ">
+            <div className="flex gap-x-4 text-2xl text-gray-600 justify-center ">
               <div className="hover:text-black hover:font-extrabold cursor-pointer">
                 <FaFacebook />
               </div>
