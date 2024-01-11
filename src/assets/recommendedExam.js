@@ -23,6 +23,14 @@ const recommendedExam = [
     participants: "More than 10 Lakhs",
     fee: "1000",
   },
+  {
+    image:
+      "https://res.cloudinary.com/djum9l80v/image/upload/v1704833936/qr5m50rkmfcmtidkuvdl.jpg",
+    name: "JEE Mains 2023",
+    organiser: "National Testing Agency",
+    participants: "More than 20 Lakhs",
+    fee: "1200",
+  },
 ];
 
 export default recommendedExam;
