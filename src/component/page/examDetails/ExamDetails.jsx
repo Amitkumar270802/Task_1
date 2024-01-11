@@ -13,10 +13,14 @@ import { MdOutlineDateRange } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { FaBookmark } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 const ExamDetails = () => {
   const [bookmark, setBookmark] = useState(1);
   return (
-    <div className="w-screen overflow-x-hidden">
+    <div className="w-screen overflow-x-hidden" data-aos="fade-up">
       <div className="w-9/12 mx-auto">
         {/* back button */}
         <div className="flex p-4">
@@ -33,10 +37,10 @@ const ExamDetails = () => {
         </div>
 
         {/* 2 part  */}
-        <div className="flex flex-wrap ">
+        <div className="flex flex-wrap " >
           <div className="lg:w-7/12 p-4 ">
-            <div className="flex flex-col gap-y-5  ">
-              <div className=" bg-white rounded-xl p-4 flex flex-col shadow-sm shadow-gray-500  ">
+            <div className="flex flex-col gap-y-5  " >
+              <div className=" bg-white rounded-xl p-4 flex flex-col shadow-sm shadow-gray-500  "  data-aos="zoom-in" data-aos-duration="1000">
                 <div className="flex items-center justify-between ">
                   <div className="flex justify-between items-center  p-1">
                     <div className="h-[40px] w-[40px] border border-gray-300 p-1 rounded-lg ">
@@ -90,7 +94,7 @@ const ExamDetails = () => {
                   </div>
                 </div>
               </div>
-              <div className=" bg-white p-4 rounded-xl shadow-sm shadow-gray-500">
+              <div className=" bg-white p-4 rounded-xl shadow-sm shadow-gray-500"  data-aos="zoom-in" data-aos-duration="1000">
                 <div className="">
                   <div className="text-justify ">
                     <h3 className="text-2xl font-semibold">
@@ -177,8 +181,8 @@ const ExamDetails = () => {
               </div>
             </div>
           </div>
-          <div className="p-4 lg:w-5/12 ">
-            <div className="bg-white p-4 rounded-xl h-fit flex flex-col shadow-sm shadow-gray-500 ">
+          <div className="p-4 lg:w-5/12  " data-aos="zoom-in" data-aos-duration="1000">
+            <div className="bg-white p-4 rounded-xl h-fit flex flex-col shadow-sm shadow-gray-500  ">
               <div className="text-justify">
                 <h2 className=" font-semibold text-xl">
                   Exams you might be interested in
